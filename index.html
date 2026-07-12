@@ -146,33 +146,24 @@ body { font-family: var(--sans); background: var(--cream); color: var(--text); o
   margin-bottom:1.25rem;
 }
 
-/* Nombres dentro del corazón de flores */
-.hero-heart {
-  position:relative;
-  width:clamp(360px,72vw,620px);
-  margin:0 auto;
+/* Nombres con tipografía script elegante (Great Vibes) */
+.hero-names {
+  font-family: var(--script);
+  font-size: clamp(5rem, 15vw, 10rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 2px 30px rgba(0,0,0,.4);
   animation: fadeUp .9s .18s ease both;
 }
-.hero-heart-img { display:block; width:100%; height:auto; }
-.hero-heart-names {
-  position:absolute; left:50%; top:38%;
-  transform:translate(-50%,-50%);
-  width:60%;
-  display:flex; flex-direction:column; align-items:center;
-  line-height:.95;
-}
-.hero-heart-names .hhn-line1 {
+.hero-names .amp {
+  display:block;
   font-family: var(--script);
-  font-size: clamp(1.9rem, 7.6vw, 3.3rem);
-  color:#fff;
-  text-shadow: 0 2px 14px rgba(0,0,0,.5);
-}
-.hero-heart-names .hhn-line2 {
-  font-family: var(--script);
-  font-size: clamp(1.9rem, 7.6vw, 3.3rem);
-  color: var(--gold-light);
-  text-shadow: 0 2px 10px rgba(0,0,0,.5);
-  margin-top:.15em;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  color: var(--gold);
+  line-height: 1;
+  margin: .1em 0;
+  animation: fadeUp .9s .28s ease both;
 }
 
 .hero-date {
@@ -879,13 +870,11 @@ body.env-open { overflow:hidden; }
 
   <div class="divider-orn">✦</div>
 
-  <div class="hero-heart">
-    <img class="hero-heart-img" src="corazon.png" alt="">
-    <div class="hero-heart-names">
-      <span class="hhn-line1">Dallana</span>
-      <span class="hhn-line2">&amp; Miguel</span>
-    </div>
-  </div>
+  <h1 class="hero-names">
+    Dallana
+    <span class="amp">&amp;</span>
+    Miguel
+  </h1>
 
   <div class="divider-orn">✦</div>
 
